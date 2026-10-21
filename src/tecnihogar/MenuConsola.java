@@ -4,13 +4,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-/**
- * Menú de consola. Solo lee datos y muestra resultados: las reglas y los cálculos
- * viven en las clases del sistema.
- */
+
 public class MenuConsola {
 
-    /** Se lanza cuando ya no hay más entrada (por ejemplo, Ctrl+D). */
     private static class FinDeEntrada extends RuntimeException {
         private static final long serialVersionUID = 1L;
     }
@@ -22,7 +18,6 @@ public class MenuConsola {
         this.sistema = sistema;
     }
 
-    /** Repite el menú hasta que el usuario elija salir. */
     public void iniciar() {
         boolean seguir = true;
         while (seguir) {
@@ -61,7 +56,6 @@ public class MenuConsola {
         System.out.println(" 0. Salir");
     }
 
-    /** Devuelve la opción elegida, o -1 si lo escrito no es un número. */
     public int leerOpcion() {
         String texto = leerLinea("Elija una opción: ");
         try {
@@ -95,7 +89,6 @@ public class MenuConsola {
         }
     }
 
-    // ---------- Operaciones ----------
 
     private void cotizarOrden() {
         OrdenServicio orden = leerOrden();
@@ -186,7 +179,6 @@ public class MenuConsola {
                 + orden.getEstado() + ". La jornada está " + jornada.getEstado() + ".");
     }
 
-    // ---------- Consultas y reportes ----------
 
     private void consultarOrdenes() {
         System.out.println("--- Órdenes ---");
@@ -254,9 +246,7 @@ public class MenuConsola {
         }
     }
 
-    // ---------- Lectura de datos ----------
 
-    /** Pregunta la categoría y los datos, y crea la orden concreta. */
     private OrdenServicio leerOrden() {
         System.out.println("1. Diagnóstico");
         System.out.println("2. Instalación");
@@ -271,7 +261,6 @@ public class MenuConsola {
         String direccion = leerLinea("Dirección: ");
         double horas = leerDouble("Horas estimadas: ");
         Zona zona = leerZona();
-        // Esta selección solo decide qué clase crear; las reglas están en cada clase.
         switch (categoria) {
             case 1:
                 return new Diagnostico(codigo, cliente, direccion, horas, zona);

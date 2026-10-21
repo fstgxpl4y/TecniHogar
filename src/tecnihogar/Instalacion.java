@@ -1,6 +1,5 @@
 package tecnihogar;
 
-/** Instalación de puntos. Es la base de la instalación eléctrica certificada. */
 public class Instalacion extends OrdenServicio {
 
     private static final double TARIFA_METROPOLITANA = 100.0;
@@ -23,7 +22,6 @@ public class Instalacion extends OrdenServicio {
         return cantidadPuntos;
     }
 
-    /** Mayor entre las horas estimadas y las horas por puntos, redondeado hacia arriba. */
     protected int calcularHorasFacturables() {
         double horasPorPuntos = cantidadPuntos * HORAS_POR_PUNTO;
         return (int) Math.ceil(Math.max(getHorasEstimadas(), horasPorPuntos));

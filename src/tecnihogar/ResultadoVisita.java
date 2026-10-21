@@ -1,6 +1,6 @@
 package tecnihogar;
 
-/** Resultado que se registra al terminar una visita. */
+
 public enum ResultadoVisita {
     COMPLETADA("Completada"),
     VISITA_FALLIDA("Visita fallida");

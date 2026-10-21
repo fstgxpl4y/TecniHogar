@@ -1,11 +1,9 @@
 package tecnihogar;
 
-/** Mantenimiento de un equipo de aire acondicionado. Solo en zona metropolitana. */
 public class MantenimientoAireAcondicionado extends OrdenServicio {
 
     private static final int BTU_MINIMO = 9000;
     private static final int BTU_MAXIMO = 60000;
-    // Supuesto: el enunciado no define la tarifa base del mantenimiento, se usa Q100.
     private static final double TARIFA_BASE = 100.0;
     private static final double COSTO_HORA = 110.0;
     private static final double CARGO_GAS_REFRIGERANTE = 80.0;

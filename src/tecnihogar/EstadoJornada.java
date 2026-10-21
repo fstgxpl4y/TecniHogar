@@ -1,6 +1,6 @@
 package tecnihogar;
 
-/** Estados por los que pasa una jornada. */
+
 public enum EstadoJornada {
     PREPARACION("Preparación"),
     EN_CURSO("En curso"),
