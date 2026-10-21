@@ -1,0 +1,296 @@
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: Opción inválida. Elija un número del menú.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: Opción inválida. Elija un número del menú.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: 1. Diagnóstico
+2. Instalación
+3. Instalación eléctrica certificada
+4. Mantenimiento de aire acondicionado
+Categoría: Código de la orden: Nombre del cliente: Dirección: Horas estimadas: Eso no es un número. Intente de nuevo.
+Horas estimadas: 1. Metropolitana
+2. Periférica
+Zona: Cantidad de puntos: Eso no es un número entero. Intente de nuevo.
+Cantidad de puntos: Categoría: Instalación
+Costo: Q460.00
+Tiempo estimado de atención: 3 días hábiles
+¿El cliente acepta la cotización? (s/n): La cotización no se registró.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: --- Ingresos ---
+Ingreso total: Q0.00
+  Por registro de órdenes: Q0.00
+  Por visitas adicionales: Q0.00
+Ingreso por categoría:
+  Diagnóstico: Q0.00
+  Instalación: Q0.00
+  Instalación eléctrica certificada: Q0.00
+  Mantenimiento de aire acondicionado: Q0.00
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: 1. Diagnóstico
+2. Instalación
+3. Instalación eléctrica certificada
+4. Mantenimiento de aire acondicionado
+Categoría: Código de la orden: Nombre del cliente: Dirección: Horas estimadas: 1. Metropolitana
+2. Periférica
+Zona: No se pudo completar la operación: Ya existe una orden con el código DIAG-001.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: 1. Diagnóstico
+2. Instalación
+3. Instalación eléctrica certificada
+4. Mantenimiento de aire acondicionado
+Categoría: Código de la orden: Nombre del cliente: Dirección: Horas estimadas: 1. Metropolitana
+2. Periférica
+Zona: Capacidad del equipo (BTU): No se pudo completar la operación: El mantenimiento de aire acondicionado solo se acepta en zona metropolitana.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: Código de la cuadrilla: Jornada 1 creada en preparación para la cuadrilla CUA-03.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: Número de jornada: Código de la orden: Orden asignada. Jornada 1 | cuadrilla CUA-03 | Preparación | 1 órdenes | horas asignadas 2.50 h | capacidad 4.00 h | disponible 1.50 h
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: Número de jornada: Código de la orden: No se pudo completar la operación: La orden INST-002 supera la capacidad de la cuadrilla CUA-03: con ella serían 5.70 h y la capacidad es 4.00 h.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: Número de jornada: Jornada 1 en curso. Las órdenes pasaron a atención.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: Número de jornada: Órdenes de la jornada sin resultado:
+  INST-001
+Código de la orden: 1. Completada
+2. Visita fallida
+Resultado: Resultado registrado. La orden INST-001 quedó Pendiente. La jornada está Cerrada.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: --- Jornadas abiertas ---
+No hay jornadas abiertas.
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: --- Ingresos ---
+Ingreso total: Q0.00
+  Por registro de órdenes: Q0.00
+  Por visitas adicionales: Q0.00
+Ingreso por categoría:
+  Diagnóstico: Q0.00
+  Instalación: Q0.00
+  Instalación eléctrica certificada: Q0.00
+  Mantenimiento de aire acondicionado: Q0.00
+
+===== TecniHogar =====
+ 1. Cotizar una orden
+ 2. Registrar una orden aceptada
+ 3. Registrar una cuadrilla
+ 4. Crear una jornada
+ 5. Asignar una orden a una jornada
+ 6. Retirar una orden de una jornada
+ 7. Iniciar una jornada
+ 8. Registrar el resultado de una visita
+ 9. Consultar órdenes
+10. Consultar cuadrillas
+11. Consultar jornadas
+12. Reporte: órdenes por categoría y estado
+13. Reporte: ingresos
+14. Reporte: jornadas abiertas
+ 0. Salir
+Elija una opción: Hasta luego.
