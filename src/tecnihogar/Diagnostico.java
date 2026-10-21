@@ -1,6 +1,6 @@
 package tecnihogar;
 
-/** Revisión de un problema antes de repararlo. */
+
 public class Diagnostico extends OrdenServicio {
 
     private static final double MAX_HORAS = 1.5;

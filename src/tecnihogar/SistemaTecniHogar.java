@@ -7,7 +7,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/** Coordina órdenes, cuadrillas, jornadas e ingresos. Todas las validaciones van antes de los cambios. */
 public class SistemaTecniHogar {
 
     private final List<OrdenServicio> ordenes = new ArrayList<>();
@@ -16,9 +15,9 @@ public class SistemaTecniHogar {
     private final RegistroIngresos registroIngresos = new RegistroIngresos();
     private int siguienteIdJornada = 1;
 
-    // ---------- Cotización y registro ----------
 
-    /** Cotizar no guarda nada ni toca los ingresos. */
+
+
     public double cotizarCosto(OrdenServicio orden) {
         validarOrden(orden);
         return orden.calcularCosto();
@@ -29,7 +28,7 @@ public class SistemaTecniHogar {
         return orden.calcularDiasAtencion();
     }
 
-    /** Registra una orden aceptada y cobra su costo completo. */
+
     public void registrarOrden(OrdenServicio orden) {
         validarOrden(orden);
         if (existeOrden(orden.getCodigo())) {
@@ -51,7 +50,7 @@ public class SistemaTecniHogar {
         cuadrillas.add(cuadrilla);
     }
 
-    // ---------- Jornadas ----------
+
 
     public Jornada crearJornada(String codigoCuadrilla) {
         Cuadrilla cuadrilla = buscarCuadrilla(codigoCuadrilla);
@@ -65,7 +64,6 @@ public class SistemaTecniHogar {
         return jornada;
     }
 
-    /** Aquí se evita la doble asignación: se busca otra jornada abierta que reserve la orden. */
     public void asignarOrden(int idJornada, String codigoOrden) {
         Jornada jornada = buscarJornada(idJornada);
         OrdenServicio orden = buscarOrden(codigoOrden);
@@ -75,7 +73,6 @@ public class SistemaTecniHogar {
                         + " ya está asignada a la jornada " + otra.getId() + ", que sigue abierta.");
             }
         }
-        // La compatibilidad con la cuadrilla y la capacidad se comprueban dentro de la jornada.
         jornada.agregarOrden(orden);
     }
 
@@ -85,7 +82,6 @@ public class SistemaTecniHogar {
         jornada.retirarOrden(orden);
     }
 
-    /** Aquí se registra el cargo de Q40 de las visitas adicionales, justo al iniciar la jornada. */
     public void iniciarJornada(int idJornada) {
         Jornada jornada = buscarJornada(idJornada);
         jornada.iniciar();
@@ -102,7 +98,7 @@ public class SistemaTecniHogar {
         jornada.registrarResultado(orden, resultado);
     }
 
-    // ---------- Consultas y reportes ----------
+
 
     public List<OrdenServicio> consultarOrdenes() {
         return Collections.unmodifiableList(ordenes);
@@ -126,7 +122,6 @@ public class SistemaTecniHogar {
         return abiertas;
     }
 
-    /** Cantidad de órdenes por categoría y estado. Las categorías salen de las propias órdenes. */
     public Map<String, Map<EstadoOrden, Integer>> contarOrdenesPorCategoriaYEstado() {
         Map<String, Map<EstadoOrden, Integer>> conteo = new LinkedHashMap<>();
         for (OrdenServicio orden : ordenes) {
@@ -183,12 +178,7 @@ public class SistemaTecniHogar {
         return false;
     }
 
-    // ---------- Datos iniciales ----------
 
-    /**
-     * Carga las órdenes y cuadrillas de inicio directamente en las listas. No pasa por
-     * registrarOrden, así que los ingresos siguen en cero.
-     */
     public void cargarDatosIniciales() {
         ordenes.add(new Diagnostico("DIAG-001", "Carlos Méndez", "6a avenida 12-34, zona 1",
                 1.0, Zona.METROPOLITANA));
@@ -212,7 +202,7 @@ public class SistemaTecniHogar {
         cuadrillas.add(new Cuadrilla("CUA-03", 4.0, false));
     }
 
-    // ---------- Auxiliares privados ----------
+
 
     private void validarOrden(OrdenServicio orden) {
         if (orden == null) {

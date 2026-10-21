@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/** Lleva la cuenta de lo que realmente se ha cobrado. */
+
 public class RegistroIngresos {
 
     static final double CARGO_VISITA_ADICIONAL = 40.0;
@@ -18,14 +18,14 @@ public class RegistroIngresos {
         this.ingresosPorVisitasAdicionales = 0;
     }
 
-    /** Cobra el costo completo de una orden aceptada. */
+
     void registrarIngresoRegistro(OrdenServicio orden) {
         double monto = orden.calcularCosto();
         ingresosPorRegistro += monto;
         ingresosPorCategoria.merge(orden.getCategoria(), monto, Double::sum);
     }
 
-    /** Cobra el cargo de Q40 de una visita posterior a la primera. */
+
     void registrarIngresoVisitaAdicional(OrdenServicio orden) {
         ingresosPorVisitasAdicionales += CARGO_VISITA_ADICIONAL;
         ingresosPorCategoria.merge(orden.getCategoria(), CARGO_VISITA_ADICIONAL, Double::sum);

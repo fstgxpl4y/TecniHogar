@@ -1,6 +1,5 @@
 package tecnihogar;
 
-/** Instalación que además lleva certificado y garantía sobre los materiales. */
 public class InstalacionElectricaCertificada extends Instalacion {
 
     private static final double COSTO_CERTIFICADO = 120.0;
@@ -22,7 +21,6 @@ public class InstalacionElectricaCertificada extends Instalacion {
         return valorMateriales;
     }
 
-    /** 5 % del valor declarado de los materiales. */
     public double calcularGarantia() {
         return valorMateriales * PORCENTAJE_GARANTIA / 100.0;
     }

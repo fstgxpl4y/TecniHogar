@@ -1,9 +1,6 @@
 package tecnihogar;
 
-/**
- * Orden de servicio de TecniHogar. Guarda los datos comunes y protege el
- * estado y las visitas. Cada categoría define sus propias reglas.
- */
+
 public abstract class OrdenServicio {
 
     private final String codigo;
@@ -40,7 +37,6 @@ public abstract class OrdenServicio {
         this.visitasRealizadas = 0;
     }
 
-    // Reglas que cambian según la categoría: las implementa cada subclase.
 
     public abstract double calcularCosto();
 
@@ -80,7 +76,7 @@ public abstract class OrdenServicio {
         return visitasRealizadas;
     }
 
-    /** Se llama cuando empieza la jornada de la orden: suma una visita y pasa a en atención. */
+
     void iniciarVisita() {
         if (estado != EstadoOrden.PENDIENTE) {
             throw new IllegalStateException("La orden " + codigo + " está " + estado
@@ -93,7 +89,7 @@ public abstract class OrdenServicio {
         estado = EstadoOrden.EN_ATENCION;
     }
 
-    /** Actualiza el estado según el resultado y la política de visitas de la categoría. */
+
     void registrarResultado(ResultadoVisita resultado) {
         if (estado != EstadoOrden.EN_ATENCION) {
             throw new IllegalStateException("La orden " + codigo + " está " + estado
@@ -108,7 +104,7 @@ public abstract class OrdenServicio {
         }
     }
 
-    /** Línea de texto con los datos de la orden para las consultas. */
+
     public String describir() {
         return String.format("%s | %s | %s | %s | %s | %s | %s | visitas %d/%d | %s | %s",
                 codigo, getCategoria(), nombreCliente, direccion, zona,

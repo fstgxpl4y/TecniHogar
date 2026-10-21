@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/** Jornada de trabajo de una cuadrilla: se prepara, se inicia y se cierra. */
 public class Jornada {
 
     private static final double MARGEN = 1e-9;
@@ -42,12 +41,12 @@ public class Jornada {
         return estado != EstadoJornada.CERRADA;
     }
 
-    /** Historial completo de órdenes de la jornada, incluso las que ya tienen resultado. */
+
     public List<OrdenServicio> getOrdenesAsignadas() {
         return Collections.unmodifiableList(ordenesAsignadas);
     }
 
-    /** Órdenes de la jornada que todavía esperan su resultado. */
+
     public List<OrdenServicio> getOrdenesPendientesDeResultado() {
         List<OrdenServicio> pendientes = new ArrayList<>();
         for (OrdenServicio orden : ordenesAsignadas) {
@@ -58,7 +57,7 @@ public class Jornada {
         return pendientes;
     }
 
-    /** Una orden está reservada mientras la jornada siga abierta y no tenga resultado en ella. */
+
     public boolean reservaOrden(OrdenServicio orden) {
         return isAbierta() && ordenesAsignadas.contains(orden)
                 && !resultadosRegistrados.containsKey(orden);
@@ -68,7 +67,7 @@ public class Jornada {
         return resultadosRegistrados.get(orden);
     }
 
-    /** Suma de horas estimadas. Se calcula cada vez para que nunca quede desactualizada. */
+
     public double getHorasAsignadas() {
         double total = 0;
         for (OrdenServicio orden : ordenesAsignadas) {
@@ -85,7 +84,7 @@ public class Jornada {
         return motivoRechazo(orden) == null;
     }
 
-    /** Devuelve el motivo por el que no se puede agregar la orden, o null si sí se puede. */
+
     private String motivoRechazo(OrdenServicio orden) {
         if (orden == null) {
             return "La orden indicada no existe.";
@@ -134,7 +133,6 @@ public class Jornada {
         ordenesAsignadas.remove(orden);
     }
 
-    /** Valida todo primero y recién después inicia las visitas, para no dejar cambios a medias. */
     public void iniciar() {
         if (estado != EstadoJornada.PREPARACION) {
             throw new IllegalStateException("La jornada " + id + " ya está " + estado

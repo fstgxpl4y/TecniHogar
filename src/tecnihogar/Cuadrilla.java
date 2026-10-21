@@ -2,7 +2,7 @@ package tecnihogar;
 
 import java.util.Locale;
 
-/** Equipo de técnicos que atiende una jornada. */
+
 public class Cuadrilla {
 
     private final String codigo;

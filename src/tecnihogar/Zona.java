@@ -1,6 +1,6 @@
 package tecnihogar;
 
-/** Zona donde se presta el servicio. */
+
 public enum Zona {
     METROPOLITANA("Metropolitana"),
     PERIFERICA("Periférica");
