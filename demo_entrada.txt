@@ -1,0 +1,46 @@
+abc
+99
+1
+2
+INST-NEW
+Pedro Ramírez
+Zona 4, ciudad de Guatemala
+dos
+2.5
+1
+cinco
+5
+n
+13
+2
+1
+DIAG-001
+Otro cliente
+Otra dirección
+1
+1
+2
+4
+AIRE-NEW
+Cliente Aire
+Villa Nueva
+2
+2
+12000
+4
+CUA-03
+5
+1
+INST-001
+5
+1
+INST-002
+7
+1
+8
+1
+INST-001
+2
+14
+13
+0
